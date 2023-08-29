@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let notes = JSON.parse(localStorage.getItem("notes")) || [];
 
     // Display existing notes
+    
     notes.forEach((note, index) => {
         createNoteElement(note.text, index);
     });
